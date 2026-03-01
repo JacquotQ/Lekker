@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <!-- Abstract geometric fish/kibbling shapes -->
+    <!-- Top orange rectangle -->
+    <path
+        android:fillColor="#FF8C42"
+        android:pathData="M20,12 L28,12 Q30,12 30,14 L30,18 Q30,20 28,20 L20,20 Q18,20 18,18 L18,14 Q18,12 20,12 Z" />
+
+    <!-- Middle-left darker orange rectangle -->
+    <path
+        android:fillColor="#FF6B35"
+        android:pathData="M16,22 L22,22 Q24,22 24,24 L24,27 Q24,29 22,29 L16,29 Q14,29 14,27 L14,24 Q14,22 16,22 Z" />
+
+    <!-- Middle-right light orange rectangle -->
+    <path
+        android:fillColor="#FFA55C"
+        android:pathData="M26,24 L33,24 Q35,24 35,26 L35,30 Q35,32 33,32 L26,32 Q24,32 24,30 L24,26 Q24,24 26,24 Z" />
+
+    <!-- Bottom red-orange rectangle -->
+    <path
+        android:fillColor="#E85D3D"
+        android:pathData="M18,32 L30,32 Q32,32 32,34 L32,39 Q32,41 30,41 L18,41 Q16,41 16,39 L16,34 Q16,32 18,32 Z" />
+
+</vector>

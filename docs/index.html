@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekker — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #37352f;
+            background: #ffffff;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .updated {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 32px;
+        }
+        h2 {
+            font-size: 1.3em;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        h3 {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 12px;
+        }
+        ul {
+            margin-bottom: 12px;
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+        a {
+            color: #2e7d8c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background: #fff8f0;
+            border-left: 3px solid #f0a050;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin: 16px 0;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #e8e8e8;
+            margin: 32px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e8e8e8;
+            color: #999;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🇳🇱 Lekker — Privacy Policy</h1>
+        <p class="updated">Last updated: March 1, 2026</p>
+
+        <h2>Overview</h2>
+        <p>Lekker is a Dutch language learning app. We are committed to protecting your privacy. This policy explains what data the app handles and how.</p>
+
+        <div class="highlight">
+            <strong>In short:</strong> Lekker does not collect any personal information. All your data stays on your device. The only thing sent to our server is the Dutch word you search for.
+        </div>
+
+        <h2>Data We Do NOT Collect</h2>
+        <ul>
+            <li>No personal information (name, email, phone number, address)</li>
+            <li>No account or login required</li>
+            <li>No device hardware identifiers (IMEI, MAC address, advertising ID)</li>
+            <li>No location data</li>
+            <li>No contacts, photos, or media</li>
+            <li>No analytics or behavioral tracking</li>
+            <li>No advertising SDKs</li>
+        </ul>
+
+        <h2>Data Stored Locally on Your Device</h2>
+        <p>The following data is stored <strong>only on your device</strong> and never uploaded to any server:</p>
+        <ul>
+            <li><strong>Search history</strong> — Words you look up and the AI-generated explanations</li>
+            <li><strong>Favorites &amp; flashcards</strong> — Words you bookmark, along with spaced-repetition progress</li>
+            <li><strong>Cached responses</strong> — Previously fetched explanations for faster access</li>
+            <li><strong>App settings</strong> — Language preference, theme, cache toggle, and learning profile weights</li>
+        </ul>
+        <p>You can clear this data at any time by clearing the app's data in your device settings or uninstalling the app.</p>
+
+        <h2>Data Transmitted to Our Server</h2>
+        <p>When you search for a Dutch word, the app sends the following to our backend server via HTTPS:</p>
+        <ul>
+            <li>The <strong>search query</strong> (the Dutch word or phrase you typed)</li>
+            <li>A <strong>random device ID</strong> (a randomly generated UUID, not linked to your identity or device hardware)</li>
+            <li>Your <strong>language preference</strong> (Chinese or English)</li>
+            <li>Your <strong>learning profile weights</strong> (four numbers controlling the emphasis of AI responses)</li>
+        </ul>
+        <p>This is the <strong>only</strong> network request the app makes. No other data is ever transmitted.</p>
+
+        <h2>Third-Party Services</h2>
+
+        <h3>Cloudflare Workers (Backend Hosting)</h3>
+        <p>Our backend runs on Cloudflare Workers. It processes your search query and forwards it to the AI service. The random device ID is used solely for rate limiting and is stored with automatic deletion after 24 hours. No query content is logged or stored on the server.</p>
+
+        <h3>Alibaba Cloud DashScope / Qwen AI</h3>
+        <p>Your search queries are processed by Alibaba Cloud's Qwen AI language model to generate Dutch language explanations. Please refer to <a href="https://www.alibabacloud.com/help/en/legal/latest/chinese-mainland-Chinese-version-Chinese-privacy-policy" target="_blank">Alibaba Cloud's Privacy Policy</a> for their data practices.</p>
+
+        <h3>Android Text-to-Speech</h3>
+        <p>The app uses Android's built-in Text-to-Speech engine for Dutch pronunciation. This is an on-device system service. Note that some device manufacturers may use cloud-based TTS engines at the system level, which is outside the app's control.</p>
+
+        <h2>Permissions</h2>
+        <p>The app requires only one permission:</p>
+        <ul>
+            <li><strong>INTERNET</strong> — Required to fetch AI-generated word explanations from the backend server.</li>
+        </ul>
+        <p>No other permissions (camera, microphone, location, storage, contacts, etc.) are requested.</p>
+
+        <h2>Data Security</h2>
+        <ul>
+            <li>All network communication uses <strong>HTTPS encryption</strong> (TLS)</li>
+            <li>No cleartext traffic is permitted</li>
+            <li>API keys are stored as server-side secrets and never exposed to the client</li>
+            <li>All user data remains in the app's private storage sandbox</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Lekker does not knowingly collect any personal information from anyone, including children under the age of 13. The app does not require registration or any personal data input.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last updated" date at the top of this page.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this Privacy Policy, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:jacquesqiu@outlook.com">jacquesqiu@outlook.com</a></p>
+
+        <div class="footer">
+            <p>This privacy policy applies to the Lekker Android app available on Google Play.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* zh-Hans — Chinese Simplified localization */
+
+// MARK: - Tab Bar (ContentView)
+"tab.search" = "搜索";
+"tab.history" = "历史";
+"tab.favorites" = "收藏";
+"tab.flashcards" = "闪卡";
+
+// MARK: - Models / WordEntry
+"time.justNow" = "刚刚";
+"time.minutesAgo %lld" = "%lld 分钟前";
+"time.hoursAgo %lld" = "%lld 小时前";
+"time.daysAgo %lld" = "%lld 天前";
+
+// MARK: - UserProfile summary
+"profile.etymology" = "词根记忆";
+"profile.stories" = "有趣故事";
+"profile.connections" = "语言联系";
+"profile.formal" = "正式用法";
+
+// MARK: - Familiarity
+"familiarity.unknown" = "不认识";
+"familiarity.fuzzy" = "模糊";
+"familiarity.known" = "认识";
+
+// MARK: - SearchView
+"search.randomChip" = "🎲 随机";
+"search.placeholder" = "输入荷兰语单词、短语或语法问题…";
+"search.button" = "搜索";
+"search.analyzing" = "AI 正在分析中…";
+"search.navTitle" = "🇳🇱 Oefening baart kunst";
+
+// MARK: - ResultCard (SearchView)
+"result.favorited" = "已收藏";
+"result.favorite" = "收藏";
+"result.copied" = "已复制";
+"result.copy" = "复制";
+"result.cached" = "缓存";
+"result.feedbackTitle" = "帮助 AI 了解你的偏好";
+
+// MARK: - HistoryView
+"history.emptyTitle" = "还没有搜索记录";
+"history.emptySubtitle" = "搜索荷兰语单词后会显示在这里";
+"history.navTitle" = "历史记录";
+"history.clearButton" = "清空";
+"history.clearConfirm" = "确定清空所有历史记录？";
+"history.cancelButton" = "取消";
+"history.closeButton" = "关闭";
+
+// MARK: - FavoritesView
+"favorites.emptyTitle" = "还没有收藏";
+"favorites.emptySubtitle" = "搜索结果下方点击 ⭐ 即可收藏词汇";
+"favorites.navTitle" = "⭐ 收藏";
+
+// MARK: - FlashcardView
+"flashcard.emptyTitle" = "还没有闪卡";
+"flashcard.emptySubtitle" = "收藏词汇后即可使用闪卡复习";
+"flashcard.startReview %lld" = "开始复习 (%lld 张)";
+"flashcard.navTitle" = "闪卡复习";
+"flashcard.dueLabel" = "待复习";
+"flashcard.masteredLabel" = "已掌握";
+"flashcard.totalLabel" = "总卡片";
+"flashcard.progressLabel" = "掌握进度";
+"flashcard.allDone" = "今日复习已完成!";
+"flashcard.nextReview %@" = "下次复习：%@";
+"flashcard.allCards" = "所有卡片";
+"flashcard.dueStatus" = "待复习";
+"flashcard.nextStatus %@" = "下次：%@";
+
+// MARK: - FlashcardSessionView
+"session.navTitle" = "复习中";
+"session.endButton" = "结束";
+"session.tapHint" = "点击卡片查看释义";
+"session.ratingPrompt" = "你对这个词的熟悉程度？";
+"session.complete" = "复习完成!";
+"session.reviewedCount %lld" = "本次复习了 %lld 张卡片";
+"session.backButton" = "返回";
+
+// MARK: - Time helpers (FlashcardView)
+"time.now" = "现在";
+"time.minutesLater %lld" = "%lld 分钟后";
+"time.hoursLater %lld" = "%lld 小时后";
+"time.daysLater %lld" = "%lld 天后";
+
+// MARK: - SettingsView
+// MARK: - Language
+"language.system" = "跟随系统";
+"settings.languagePicker" = "语言";
+"settings.languageHeader" = "语言设置";
+"settings.languageFooter" = "切换应用界面语言，选择「跟随系统」则自动适配系统语言。";
+
+"settings.navTitle" = "⚙️ 设置";
+
+"settings.cacheToggle" = "启用响应缓存";
+"settings.performanceHeader" = "性能";
+"settings.cacheFooter" = "开启后，相同词汇的查询不会重复调用 API，节省时间。";
+"settings.profileHeader" = "AI 学习档案";
+"settings.noPreferences" = "还没有记录偏好，给搜索结果反馈后 AI 会自动优化";
+"settings.resetProfile" = "重置学习偏好";
+"settings.profileFooter" = "AI 会根据你对每次解释的👍/👎反馈，自动调整解释侧重点。";
+"settings.resetConfirm" = "确定重置学习偏好吗？";
+"settings.resetButton" = "重置";
+"settings.cancelButton" = "取消";
+"settings.statsHeader" = "使用统计";
+"settings.historyCount" = "历史记录";
+"settings.historyValue %lld" = "%lld 条";
+"settings.favoritesCount" = "已收藏词汇";
+"settings.favoritesValue %lld" = "%lld 个";
+"settings.closeButton" = "关闭";
+"settings.savedButton" = "已保存 ✓";
+"settings.saveButton" = "保存";
+
+// MARK: - SpeechService
+"speech.stopLabel" = "停止朗读";
+"speech.speakLabel" = "朗读荷兰语";
+
+// MARK: - AIService errors
+"error.invalidResponse" = "无效的服务器响应";
+"error.httpError %lld" = "服务器错误（HTTP %lld）";
+"error.rateLimited" = "今日查询已达上限，请明天再试。";

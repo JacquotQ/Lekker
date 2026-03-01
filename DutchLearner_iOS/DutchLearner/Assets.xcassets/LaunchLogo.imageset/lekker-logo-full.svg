@@ -1,0 +1,18 @@
+<svg width="300" height="82" viewBox="0 0 300 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo icon shapes - vertically centered -->
+  <rect x="8" y="8" width="24" height="16" rx="4" fill="#FF8C42"/>
+  <rect x="0" y="28" width="20" height="14" rx="4" fill="#FF6B35"/>
+  <rect x="20" y="32" width="22" height="16" rx="4" fill="#FFA55C"/>
+  <rect x="4" y="48" width="32" height="18" rx="4" fill="#E85D3D"/>
+
+  <!-- Lekker text - centered vertically -->
+  <text
+    x="72"
+    y="52"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="48"
+    font-weight="bold"
+    fill="#FF6B35"
+    letter-spacing="-0.02em"
+  >Lekker</text>
+</svg>

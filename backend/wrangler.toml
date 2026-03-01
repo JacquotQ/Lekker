@@ -1,0 +1,9 @@
+name = "lekker-api"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "043c6be19c9347498936e3220fc7f17e"
+
+# API key — set with:
+#   npx wrangler secret put QWEN_API_KEY

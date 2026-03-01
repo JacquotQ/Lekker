@@ -1,0 +1,120 @@
+/* en — English localization */
+
+// MARK: - Tab Bar (ContentView)
+"tab.search" = "Search";
+"tab.history" = "History";
+"tab.favorites" = "Favorites";
+"tab.flashcards" = "Cards";
+
+// MARK: - Models / WordEntry
+"time.justNow" = "Just now";
+"time.minutesAgo %lld" = "%lld min ago";
+"time.hoursAgo %lld" = "%lld hr ago";
+"time.daysAgo %lld" = "%lld days ago";
+
+// MARK: - UserProfile summary
+"profile.etymology" = "Etymology";
+"profile.stories" = "Stories";
+"profile.connections" = "Connections";
+"profile.formal" = "Formal Usage";
+
+// MARK: - Familiarity
+"familiarity.unknown" = "Don't know";
+"familiarity.fuzzy" = "Fuzzy";
+"familiarity.known" = "Know it";
+
+// MARK: - SearchView
+"search.randomChip" = "🎲 Random";
+"search.placeholder" = "Enter a Dutch word, phrase, or grammar question…";
+"search.button" = "Search";
+"search.analyzing" = "AI is analyzing…";
+"search.navTitle" = "🇳🇱 Oefening baart kunst";
+
+// MARK: - ResultCard (SearchView)
+"result.favorited" = "Saved";
+"result.favorite" = "Save";
+"result.copied" = "Copied";
+"result.copy" = "Copy";
+"result.cached" = "Cached";
+"result.feedbackTitle" = "Help AI learn your preferences";
+
+// MARK: - HistoryView
+"history.emptyTitle" = "No search history yet";
+"history.emptySubtitle" = "Your searched Dutch words will appear here";
+"history.navTitle" = "History";
+"history.clearButton" = "Clear";
+"history.clearConfirm" = "Clear all search history?";
+"history.cancelButton" = "Cancel";
+"history.closeButton" = "Close";
+
+// MARK: - FavoritesView
+"favorites.emptyTitle" = "No favorites yet";
+"favorites.emptySubtitle" = "Tap ⭐ below search results to save words";
+"favorites.navTitle" = "⭐ Favorites";
+
+// MARK: - FlashcardView
+"flashcard.emptyTitle" = "No flashcards yet";
+"flashcard.emptySubtitle" = "Save words to start flashcard review";
+"flashcard.startReview %lld" = "Start Review (%lld cards)";
+"flashcard.navTitle" = "Flashcard Review";
+"flashcard.dueLabel" = "Due";
+"flashcard.masteredLabel" = "Mastered";
+"flashcard.totalLabel" = "Total";
+"flashcard.progressLabel" = "Mastery Progress";
+"flashcard.allDone" = "All reviews done for today!";
+"flashcard.nextReview %@" = "Next review: %@";
+"flashcard.allCards" = "All Cards";
+"flashcard.dueStatus" = "Due";
+"flashcard.nextStatus %@" = "Next: %@";
+
+// MARK: - FlashcardSessionView
+"session.navTitle" = "Reviewing";
+"session.endButton" = "End";
+"session.tapHint" = "Tap card to see definition";
+"session.ratingPrompt" = "How familiar are you with this word?";
+"session.complete" = "Review Complete!";
+"session.reviewedCount %lld" = "Reviewed %lld cards this session";
+"session.backButton" = "Back";
+
+// MARK: - Time helpers (FlashcardView)
+"time.now" = "Now";
+"time.minutesLater %lld" = "in %lld min";
+"time.hoursLater %lld" = "in %lld hr";
+"time.daysLater %lld" = "in %lld days";
+
+// MARK: - SettingsView
+// MARK: - Language
+"language.system" = "System";
+"settings.languagePicker" = "Language";
+"settings.languageHeader" = "Language";
+"settings.languageFooter" = "Switch the app interface language. Choose \"System\" to follow iOS language.";
+
+"settings.navTitle" = "⚙️ Settings";
+
+"settings.cacheToggle" = "Enable Response Cache";
+"settings.performanceHeader" = "Performance";
+"settings.cacheFooter" = "When enabled, repeat queries won't call the API again, saving time.";
+"settings.profileHeader" = "AI Learning Profile";
+"settings.noPreferences" = "No preferences recorded yet. Give feedback on results and AI will adapt.";
+"settings.resetProfile" = "Reset Learning Preferences";
+"settings.profileFooter" = "AI adjusts explanation focus based on your 👍/👎 feedback on each response.";
+"settings.resetConfirm" = "Reset learning preferences?";
+"settings.resetButton" = "Reset";
+"settings.cancelButton" = "Cancel";
+"settings.statsHeader" = "Usage Stats";
+"settings.historyCount" = "History";
+"settings.historyValue %lld" = "%lld entries";
+"settings.favoritesCount" = "Saved Words";
+"settings.favoritesValue %lld" = "%lld words";
+"settings.closeButton" = "Close";
+"settings.savedButton" = "Saved ✓";
+"settings.saveButton" = "Save";
+
+// MARK: - SpeechService
+"speech.stopLabel" = "Stop speaking";
+"speech.speakLabel" = "Speak Dutch";
+
+// MARK: - AIService errors
+"error.invalidResponse" = "Invalid server response";
+"error.httpError %lld" = "Server error (HTTP %lld)";
+"error.rateLimited" = "Daily query limit reached. Try again tomorrow.";

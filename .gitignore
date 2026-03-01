@@ -1,0 +1,19 @@
+# macOS
+*.DS_Store
+
+# Android
+LekkerAndroid/.gradle/
+LekkerAndroid/.idea/
+LekkerAndroid/app/build/
+LekkerAndroid/local.properties
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+
+# Backend
+backend/node_modules/
+backend/.wrangler/
+
+# Environment
+.env
