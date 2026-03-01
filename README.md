@@ -12,7 +12,7 @@
 
 ## Overview
 
-Lekker helps Chinese-speaking learners study Dutch vocabulary through AI-generated explanations. Type any Dutch word or phrase and get bilingual definitions, example sentences, memory tricks, etymological connections, and cultural context — all powered by a serverless backend.
+Lekker helps learners study Dutch vocabulary through AI-generated explanations. Type any Dutch word or phrase and get bilingual definitions, example sentences, memory tricks, etymological connections, and cultural context — all powered by a serverless backend.
 
 ## Features
 
