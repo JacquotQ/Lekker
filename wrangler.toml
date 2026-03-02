@@ -1,0 +1,18 @@
+name = "lekker-api-v2"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# Rate limiting KV (reuse existing namespace)
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "043c6be19c9347498936e3220fc7f17e"
+
+# Dictionary KV — create with:
+#   npx wrangler kv:namespace create DICT
+# Then paste the id below
+[[kv_namespaces]]
+binding = "DICT"
+id = "PLACEHOLDER_DICT_KV_ID"
+
+# API key — set with:
+#   npx wrangler secret put QWEN_API_KEY
