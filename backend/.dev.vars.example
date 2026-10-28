@@ -1,0 +1,4 @@
+# Local development only: copy this file to .dev.vars in this directory.
+# Replace the placeholder in .dev.vars; never commit real credentials.
+# For deployment, use: npx wrangler secret put QWEN_API_KEY
+QWEN_API_KEY="replace-with-your-dashscope-api-key"

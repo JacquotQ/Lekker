@@ -17,3 +17,17 @@ backend/.wrangler/
 
 # Environment
 .env
+.env.*
+.dev.vars
+.dev.vars.*
+
+# Android signing credentials and private key stores
+keystore.properties
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# Safe configuration templates contain placeholders only
+!.env.example
+!.dev.vars.example
