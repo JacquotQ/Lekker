@@ -23,8 +23,10 @@ Lekker helps learners study Dutch vocabulary through AI-generated explanations. 
 - **Adaptive Learning** — Thumbs up/down feedback adjusts future explanation emphasis
 - **Flashcards** — Spaced repetition review for saved vocabulary
 - **Favorites & History** — Bookmark words and revisit past lookups
-- **Smart Cache** — Identical queries are served locally, reducing API calls
+- **iOS Query Cache** — Repeated queries can reuse stored responses when caching is enabled
 - **Text-to-Speech** — Native pronunciation playback on both platforms
+
+Android can reopen saved explanations from history and flashcards. Its cache setting is present, but regular searches currently call the backend each time; automatic query-cache reads and writes are not yet connected to that search flow.
 
 ## Architecture
 
@@ -49,10 +51,13 @@ Users never handle API keys — everything is proxied through the backend.
 │   ├── src/
 │   │   ├── index.ts           # Request routing, rate limiting, SSE proxy
 │   │   └── prompt.ts          # System prompt builder
+│   ├── .dev.vars.example      # Placeholder-only local secret template
 │   ├── wrangler.toml          # Worker configuration
 │   └── package.json
-├── app.py                     # Legacy web version (Flask)
-└── templates/                 # Legacy web frontend
+├── PRIVACY_POLICY.md          # Android privacy policy
+├── docs/
+│   └── index.html             # Hosted Android privacy policy
+└── LICENSE
 ```
 
 ## Getting Started
