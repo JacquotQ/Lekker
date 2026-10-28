@@ -1,6 +1,6 @@
 # Privacy Policy for Lekker
 
-**Last updated: March 1, 2026**
+**Last updated: October 28, 2026**
 
 ## Overview
 
@@ -8,7 +8,7 @@ Lekker is a Dutch language learning app. We are committed to protecting your pri
 
 ## Data We Do NOT Collect
 
-- No personal information (name, email, phone number, address)
+- No registration information (name, email, phone number, address)
 - No account or login required
 - No device hardware identifiers (IMEI, MAC address, advertising ID)
 - No location data
@@ -18,30 +18,36 @@ Lekker is a Dutch language learning app. We are committed to protecting your pri
 
 ## Data Stored Locally on Your Device
 
-The following data is stored **only on your device** using Android SharedPreferences and never uploaded to any server:
+The app stores the following data locally using Android SharedPreferences. It does not upload your saved history, favorites, flashcard progress, or stored responses to the Lekker backend. Search requests transmit the data described in the next section, and Android may back up local app data as described below.
 
 - **Search history**: Words you look up and the AI-generated explanations
 - **Favorites & flashcards**: Words you bookmark, along with spaced-repetition progress (review intervals, ease factors)
-- **Cached responses**: Previously fetched explanations for faster access
+- **Saved explanations**: Previously fetched explanations that can be reopened from history and flashcards
 - **App settings**: Language preference (Chinese/English), theme, cache toggle, and learning profile weights
 
-You can clear this data at any time by clearing the app's data in your device settings or uninstalling the app.
+You can remove the local copy by clearing the app's data in your device settings or uninstalling the app. System backups are managed separately through your device and backup provider settings, and may restore app data when you reinstall the app.
+
+### Android System Backup and Restore
+
+The app currently enables Android system backup and does not exclude its SharedPreferences from backup. Depending on your Android version, device manufacturer, and backup settings, this data may be included in a cloud backup to your Google Drive account or transferred to another device. This may include saved searches and explanations, favorites, flashcard progress, app settings, learning profile weights, and the random app-generated device ID.
+
+These backups are handled by Android and the backup provider, rather than by the Lekker backend. See [Android's backup documentation](https://developer.android.com/identity/data/autobackup) and your device's backup settings for details.
 
 ## Data Transmitted to Our Server
 
 When you search for a Dutch word, the app sends the following to our backend server via HTTPS:
 
 - The **search query** (the Dutch word or phrase you typed)
-- A **random device ID** (a randomly generated UUID, not linked to your identity or device hardware)
+- A **random device ID** (an app-generated UUID, not derived from hardware identifiers)
 - Your **language preference** (Chinese or English)
 - Your **learning profile weights** (four numbers controlling the emphasis of AI responses)
 
-This is the **only** network request the app makes. No other data is ever transmitted.
+The app's AI lookup request includes the data listed above. Android system backup and text-to-speech services may make separate network requests, as described in this policy.
 
 ## Third-Party Services
 
 ### Cloudflare Workers (Backend Hosting)
-Our backend runs on Cloudflare Workers. It processes your search query and forwards it to the AI service. The random device ID is used solely for rate limiting (50 queries per day) and is stored in Cloudflare KV with automatic deletion after 24 hours. No query content is logged or stored on the server.
+Our backend runs on Cloudflare Workers. It processes your search query and forwards it to the AI service. The random device ID is used for rate limiting (50 queries per day) and is included in a dated Cloudflare KV counter key. Each counter expires 24 hours after its last update. The Worker does not save query text or generated explanations in KV. It logs upstream API error responses for troubleshooting; those messages may contain information returned by the AI provider. Log retention depends on the hosting configuration and provider policies.
 
 ### Alibaba Cloud DashScope / Qwen AI
 Your search queries are processed by Alibaba Cloud's Qwen AI language model to generate Dutch language explanations. Queries are sent to Alibaba Cloud's API via our backend server. Please refer to [Alibaba Cloud's Privacy Policy](https://www.alibabacloud.com/help/en/legal/latest/chinese-mainland-Chinese-version-Chinese-privacy-policy) for their data practices.
@@ -62,7 +68,7 @@ No other permissions (camera, microphone, location, storage, contacts, etc.) are
 - All network communication uses **HTTPS encryption** (TLS)
 - No cleartext traffic is permitted
 - API keys are stored as server-side secrets and never exposed to the client
-- All user data remains in the app's private storage sandbox
+- Local app data is stored in the app's private storage sandbox; Android system backups may contain a copy as described above
 
 ## Children's Privacy
 
